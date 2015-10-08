@@ -4,8 +4,8 @@ This is a reimplementation of [Cactus](http://github.com/koenbok/Cactus) ideas w
 
 #### Quick start
 
-- `git clone https://github.com/motif/MoonbaseTemplate.git mywebsite` clone the template into a mywebsite folder where your site will live.
-- `cd mywebsite` navigate into your project folder
+- `git clone https://github.com/motif/Moonbase.git my-project` clone the template into a my-project folder where your site will live.
+- `cd my-project` navigate into your project folder
 - `make` start the default watch task that builds your site and starts a web server that listens for changes.
 - `git remote rm origin` to disconnect git from this repository and you can add your own.
 
