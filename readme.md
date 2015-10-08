@@ -5,7 +5,7 @@ This is a reimplementation of [Cactus](http://github.com/koenbok/Cactus) ideas w
 #### Quick Start
 
 - `git clone https://github.com/motif/MoonbaseTemplate.git website.com` clone the template into a website.com folder where your site will live.
-- `cd website.com` navigate into your ptoject folder
+- `cd website.com` navigate into your project folder
 - `make` start the default watch talk that builds your site and starts a web server that listens for changes.
 
 #### Goals
@@ -20,7 +20,7 @@ This is a reimplementation of [Cactus](http://github.com/koenbok/Cactus) ideas w
 - Markdown support (with `{% markdown %}`) based on [Marked](https://github.com/chjj/marked)
 - Code highlighting in Markdown, based on [Highlights](https://github.com/atom/highlights)
 - Support for SCSS and includes, including minification sourcemaps.
-- Support for Java/Coffee Script (with minification and sourcemaps), based on [Webpack](https://webpack.github.io)
+- Support for javascript/coffeescript (with minification and sourcemaps), based on [Webpack](https://webpack.github.io)
 - Support for image sprites [TODO]
 - Support for image optimizations [TODO]
 
