@@ -1,3 +1,5 @@
+![Moonbase](http://cl.ly/image/3n3z0u1k2l41/2D1BD7F500000578-3260346-image-a-9_1444040887566.jpg)
+
 ### Moonbase
 
 This is a reimplementation of [Cactus](http://github.com/koenbok/Cactus) ideas with [Gulp](http://gulpjs.com). No fancy app, just a command line tool. 
