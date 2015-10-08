@@ -1,12 +1,17 @@
-### Cactus with Gulp
+### Moonbase
 
-This is a reimplementation of Cactus' ideas with [Gulp](http://gulpjs.com). No fancy app, just a command line tool. The main goal for this was speed, as larger Cactus projects became slow to work on. Other goals are portability so everyone can start building right away. Next to that, the added benefits are minified and compiled Java/Coffee Script, the posibilities to run tests, etc.
+This is a reimplementation of [Cactus](http://github.com/koenbok/Cactus) ideas with [Gulp](http://gulpjs.com). No fancy app, just a command line tool. 
 
 #### Quick Start
 
 - `git clone https://github.com/motif/MoonbaseTemplate.git website.com` clone the template
 - `cd website` 
 - `make`
+
+#### Goals
+
+- Speed, as larger Cactus projects became slow to work on. 
+- Portability so everyone can start building right away.
 
 #### Features
 
