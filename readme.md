@@ -2,16 +2,19 @@
 
 This is a reimplementation of [Cactus](http://github.com/koenbok/Cactus) ideas with [Gulp](http://gulpjs.com). No fancy app, just a command line tool. 
 
-#### Quick Start
+#### Quick start
 
 - `git clone https://github.com/motif/MoonbaseTemplate.git website.com` clone the template into a website.com folder where your site will live.
 - `cd website.com` navigate into your project folder
-- `make` start the default watch talk that builds your site and starts a web server that listens for changes.
+- `make` start the default watch task that builds your site and starts a web server that listens for changes.
+
+From this point you will see something like `Serving at: http://localhost:8000` and you can visit the address with your web browser. Every time you make a change, the content will be updated automatically.
 
 #### Goals
 
 - Speed, as larger Cactus projects became slow to work on. 
 - Portability so everyone can start building right away.
+- As simple as possible.
 
 #### Features
 
@@ -21,38 +24,38 @@ This is a reimplementation of [Cactus](http://github.com/koenbok/Cactus) ideas w
 - Code highlighting in Markdown, based on [Highlights](https://github.com/atom/highlights)
 - Support for SCSS and includes, including minification sourcemaps.
 - Support for javascript/coffeescript (with minification and sourcemaps), based on [Webpack](https://webpack.github.io)
+- Automatic available port selection for the web server.
 - Support for image sprites [TODO]
 - Support for image optimizations [TODO]
 
 
 #### Project layout
 
-```
-Makefile		Shorthands for commands to quickly build or install.
-config.coffee	Configuration variables like page context function
-pages			The html pages including site structure.
-templates		The templates used in the html pages (for extend and include).
-assets
-	static		Just static files like images, fonts and downloads.
-	css			CSS and SCSS files and dependents. The top level files get compiled.
-	scripts		Java/Coffee Script files and dependents. The top level files get compiled and minified.
-.build			Path for the generated site (hidden by default).
-```
+
+- `Makefile` Shorthands for commands to quickly build or install.
+- `config.coffee` Configuration variables like page context function
+- `pages` The html pages including site structure.
+- `templates` The templates used in the html pages (for extend and include).
+- `assets`
+	- `static` Just static files like images, fonts and downloads.
+	- `css` CSS and SCSS files and dependents. The top level files get compiled.
+	- `scripts` javascript/coffeescript files and dependents. The top level files get compiled and minified.
+- `package.json` [npm information](https://docs.npmjs.com/files/package.json) about used javascript packages.
+- `.build` Path for the generated site (hidden by default).
+
 
 #### Generated site layout
 
 So you can find this structure in `.build` after a make build command.
 
-```
+`/pages/index.html` ➝ `/index.html` Rendered template
+`/pages/about/us.html` ➝ `/about/us.html` Rendered template
+`/assets/static/img/image.jpg` ➝ `/assets/static/img/image.jpg` Simple copy
+`/assets/css/style.scss` ➝ `/assets/css/style.css` SCSS compiled
+`/assets/scripts/main.coffee` ➝ `/assets/scripts/main.coffee.js` Coffee compiled and minified
+`/assets/scripts/main.coffee` ➝ `/assets/scripts/main.coffee.map` Coffee sourcemap
+`/assets/scripts/tracker.js` ➝ `/assets/scripts/tracker.js` JavaScript minified 
 
-/index.html							from: /pages/index.html				Rendered template
-/about/index.html					from: /pages/about/index.html		Rendered template
-/assets/static/img/image.jpg		from: /static/img/image.jpg			Simple copy
-/assets/css/style.css				from: /css/style.scss				SCSS compiled and minified
-/assets/scripts/main.coffee.js		from: /scripts/main.coffee			Coffee compiled and minified
-/assets/scripts/main.coffee.js.map	from: /scripts/main.coffee			Coffee sourcemap
-/assets/scripts/tracker.js			from: /scripts/tracker.js			JavaScript minified
-```
 
 #### Todo
 
@@ -62,3 +65,12 @@ So you can find this structure in `.build` after a make build command.
 - Tests
 - Build command into separate directory
 - Maybe move /subdir/subdir.index.html to /subdir/index.html
+
+
+#### Known issues
+
+On the Mac, there is a building error with `node-gyp` if you are using a recent node. You can solve it by installing an older version:
+
+- `brew tap homebrew/versions`
+- `brew install homebrew/versions/node012`
+- `brew switch node 0.12.0`
