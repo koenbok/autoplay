@@ -48,13 +48,13 @@ From this point you will see something like `Serving at: http://localhost:8000` 
 
 So you can find this structure in `.build` after a make build command.
 
-`/pages/index.html` ➝ `/index.html` Rendered template
-`/pages/about/us.html` ➝ `/about/us.html` Rendered template
-`/assets/static/img/image.jpg` ➝ `/assets/static/img/image.jpg` Simple copy
-`/assets/css/style.scss` ➝ `/assets/css/style.css` SCSS compiled
-`/assets/scripts/main.coffee` ➝ `/assets/scripts/main.coffee.js` Coffee compiled and minified
-`/assets/scripts/main.coffee` ➝ `/assets/scripts/main.coffee.map` Coffee sourcemap
-`/assets/scripts/tracker.js` ➝ `/assets/scripts/tracker.js` JavaScript minified 
+- `/pages/index.html` ➝ `/index.html` Rendered template
+- `/pages/about/us.html` ➝ `/about/us.html` Rendered template
+- `/assets/static/img/image.jpg` ➝ `/assets/static/img/image.jpg` Simple copy
+- `/assets/css/style.scss` ➝ `/assets/css/style.css` SCSS compiled
+- `/assets/scripts/main.coffee` ➝ `/assets/scripts/main.coffee.js` Coffee compiled and minified
+- `/assets/scripts/main.coffee` ➝ `/assets/scripts/main.coffee.map` Coffee sourcemap
+- `/assets/scripts/tracker.js` ➝ `/assets/scripts/tracker.js` JavaScript minified 
 
 
 #### Todo
