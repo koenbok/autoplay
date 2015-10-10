@@ -9,6 +9,9 @@ NODE_BIN = $(NODE_MODULES)/.bin
 npm:
 	npm install
 
+clean: 
+	$(NODE_BIN)/moonbase clean
+
 build: npm
 	$(NODE_BIN)/moonbase build
 
