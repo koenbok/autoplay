@@ -62,13 +62,12 @@ So you can find this structure in `.build` after a make build command.
 
 #### Todo
 
-- Better error reporting
+- Better error reporting, especially around the template engine
 - Some form of deploying with rsync, s3
-- Port blog plugin
-- Tests
-- Build command into separate directory
+- Port blog plugin, add as example
+- Build command into separate directory so you don't change it by accident
 - Maybe move /subdir/subdir.index.html to /subdir/index.html
-
+- Tests
 
 #### Known issues
 
