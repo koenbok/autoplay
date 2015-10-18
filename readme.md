@@ -18,6 +18,7 @@ From this point you will see something like `Serving at: http://localhost:8000` 
 - Speed, as larger Cactus projects became slow to work on. 
 - Portability so everyone can start building right away.
 - As simple as possible, but not too simple.
+- Less bitrot, projects should keep working for a long time.
 
 #### Features
 
