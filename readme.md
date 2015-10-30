@@ -77,3 +77,5 @@ On the Mac, there is a building error with `node-gyp` if you are using a recent 
 - `brew tap homebrew/versions`
 - `brew install homebrew/versions/node012`
 - `brew switch node 0.12.0`
+
+If you are upgrading from a Django based system, you need to remove block names from your `endblock` statements: `{% endblock body %}` -> `{% endblock %}`. You can find a handy regex for it [here](https://regex101.com/r/gB4uB9/1).
