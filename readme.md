@@ -11,7 +11,7 @@ This is a reimplementation of [Cactus](http://github.com/koenbok/Cactus) ideas w
 - `git remote rm origin` to disconnect git from this repository so you can add your own.
 - `make` start the default watch task that builds your site and starts a web server that listens for changes.
 
-From this point you will see something like `Serving at: http://localhost:8000` and you can visit the address with your web browser. Every time you make a change, the content will be updated automatically.
+From this point you will see something like `Serving at: http://localhost:9000` and you can visit the address with your web browser. Every time you make a change, the content will be updated automatically.
 
 #### Goals
 
