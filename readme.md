@@ -2,7 +2,7 @@
 
 ### Moonbase
 
-This is a reimplementation of [Cactus](http://github.com/koenbok/Cactus) ideas with [Gulp](http://gulpjs.com). No fancy app, just a command line tool. 
+This is a reimplementation of [Cactus](http://github.com/koenbok/Cactus) ideas with [Gulp](http://gulpjs.com). No fancy app, just a command line tool.
 
 #### Quick start
 
@@ -15,7 +15,7 @@ From this point you will see something like `Serving at: http://localhost:8000` 
 
 #### Goals
 
-- Speed, as larger Cactus projects became slow to work on. 
+- Speed, as larger Cactus projects became slow to work on.
 - Portability so everyone can start building right away.
 - As simple as possible, but not too simple.
 - Less bitrot, projects should keep working for a long time.
@@ -29,12 +29,10 @@ From this point you will see something like `Serving at: http://localhost:8000` 
 - Support for SCSS and includes, including minification sourcemaps.
 - Support for javascript/coffeescript (with minification and sourcemaps), based on [Webpack](https://webpack.github.io)
 - Automatic available port selection for the web server.
-- Support for image sprites [TODO]
+- Support for image sprites, based on [SpriteSmith](https://github.com/twolfson/gulp.spritesmith) including [Retina Support](https://github.com/twolfson/gulp.spritesmith/tree/3.5.3#retina-parameters).
 - Support for image optimizations [TODO]
 
-
 #### Project layout
-
 
 - `Makefile` Shorthands for commands to quickly build or install.
 - `config.coffee` Configuration variables like page context function
@@ -47,7 +45,6 @@ From this point you will see something like `Serving at: http://localhost:8000` 
 - `package.json` [npm information](https://docs.npmjs.com/files/package.json) about used javascript packages.
 - `.build` Path for the generated site (hidden by default).
 
-
 #### Generated site layout
 
 So you can find this structure in `.build` after a make build command.
@@ -58,8 +55,12 @@ So you can find this structure in `.build` after a make build command.
 - `/assets/css/style.scss` ➝ `/assets/css/style.css` SCSS compiled
 - `/assets/scripts/main.coffee` ➝ `/assets/scripts/main.coffee.js` Coffee compiled and minified
 - `/assets/scripts/main.coffee` ➝ `/assets/scripts/main.coffee.map` Coffee sourcemap
-- `/assets/scripts/tracker.js` ➝ `/assets/scripts/tracker.js` JavaScript minified 
+- `/assets/scripts/tracker.js` ➝ `/assets/scripts/tracker.js` JavaScript minified
+- `/assets/sprites/frontpage/*.png` ➝ `/assets/sprites/frontpage.png` sprite package image
 
+### Sprites
+
+Every folder within `assets/sprites` will be converted into a sprite package. This will result in an SCSS and image file. The SCSS file will end up in the _project_ folder with the same location as the images. So `assets/sprites/mainpage/*.png` will generate an SCSS file at `assets/sprites/mainpage.scss`. That way you can include it in your main SCSS file and everything will work.
 
 #### Todo
 
