@@ -7,9 +7,9 @@ NODE_BIN = $(NODE_MODULES)/.bin
 ### Moonbase
 
 npm:
-	npm install
+	npm install --loglevel=error
 
-clean: 
+clean:
 	$(NODE_BIN)/moonbase clean
 
 build: npm
