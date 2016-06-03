@@ -5,7 +5,7 @@
 
 path: {{ path }}
 domain: {{ domain }}
-date: {{ date }}
+date: {{ date | date("DD MM YY") }}
 
 <!-- You can include files from the template path -->
 {% include "includeA.html" %}
