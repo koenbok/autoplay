@@ -58,6 +58,11 @@ So you can find this structure in `.build` after a make build command.
 - `/assets/scripts/tracker.js` ➝ `/assets/scripts/tracker.js` JavaScript minified
 - `/assets/sprites/frontpage/*.png` ➝ `/assets/sprites/frontpage.png` sprite package image
 
+#### Troubleshooting
+
+- You can update node with `brew update; brew upgrade node; npm update -g` (Mac only).
+- You can reset your npm packages with `rm -Rf ./node_modules`.
+
 #### Sprites
 
 Every folder within `assets/sprites` will be converted into a sprite package. This will result in an SCSS and image file. The SCSS file will end up in the _project_ folder with the same location as the images. So `assets/sprites/mainpage/*.png` will generate an SCSS file at `assets/sprites/mainpage.scss`. That way you can include it in your main SCSS file and everything will work.
