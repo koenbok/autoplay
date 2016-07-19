@@ -7,9 +7,10 @@ NODE_BIN = $(NODE_MODULES)/.bin
 ### Moonbase
 
 npm:
-	npm install --loglevel=error
+	@test -d ./node_modules || npm install --loglevel=error
 
 clean:
+	rm -Rf ./node_modules
 	$(NODE_BIN)/moonbase clean
 
 build: npm
@@ -28,16 +29,6 @@ upload: build
 
 ### Utilities
 
-BREW_DEPENDENCIES = node rsync
-
-# Global check to see if all dependencies are there
-K := $(foreach exec,$(EXECUTABLES), \
-	$(if $(shell which $(exec)),some string,$(error "No $(exec) in PATH, run 'make bootstrap')))
-
-bootstrap:
-	brew install $(BREW_DEPENDENCIES)
-	make npm
-
 git-check:
 	@status=$$(git status --porcelain); \
 	if test "x$${status}" = x; then \
@@ -47,4 +38,4 @@ git-check:
 	fi
 
 
-.PHONY: bootstrap npm build watch upload git-check
+.PHONY: npm build clean watch upload git-check
