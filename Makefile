@@ -10,8 +10,8 @@ npm:
 	@test -d ./node_modules || npm install --loglevel=error
 
 clean:
-	rm -Rf ./node_modules
 	$(NODE_BIN)/moonbase clean
+	rm -Rf ./node_modules
 
 build: npm
 	$(NODE_BIN)/moonbase build
