@@ -58,6 +58,13 @@ So you can find this structure in `.build` after a make build command.
 - `/assets/scripts/tracker.js` ➝ `/assets/scripts/tracker.js` JavaScript minified
 - `/assets/sprites/frontpage/*.png` ➝ `/assets/sprites/frontpage.png` sprite package image
 
+#### SSL
+
+By default, Moonbase uses ssl from 1.7 and up so you can test and find ssl issues before you deploy. Unfortunatily ssl certificates are bound to hosts, so you will have trust the certificates every time you visit a moonbase project/host/port combination for the first time:
+
+- Safari: https://cl.ly/1I0F0Q2k3Q2b
+- Chrome: https://cl.ly/0P2a3U1f3H0b
+
 #### Troubleshooting
 
 - You can update node with `brew update; brew upgrade node; npm update -g` (Mac only).
