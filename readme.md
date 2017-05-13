@@ -6,6 +6,7 @@ This is a reimplementation of [Cactus](http://github.com/koenbok/Cactus) ideas w
 
 #### Quick start
 
+- Make sure [yarn](https://yarnpkg.com) is installed: `brew install yarn`.
 - `git clone https://github.com/motif/Moonbase.git my-project` clone the template into a my-project folder where your site will live.
 - `cd my-project` navigate into your project folder.
 - `git remote rm origin` to disconnect git from this repository so you can add your own.

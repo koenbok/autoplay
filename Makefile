@@ -7,7 +7,7 @@ NODE_BIN = $(NODE_MODULES)/.bin
 ### Moonbase
 
 npm:
-	@test -d ./node_modules || npm install --loglevel=error
+	@test -d ./node_modules || yarn
 
 clean:
 	$(NODE_BIN)/moonbase clean
