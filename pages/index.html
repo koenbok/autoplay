@@ -1,20 +1,7 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %}
 
-<a id="docs" href="http://github.com/motif/moonbase">Documentation</a>
+<video muted playsinline id="video" style="width: 200px" src="/assets/static/gradients.mp4" type="video/mp4" />
 
-<section id="wrapper">
-
-	<div id="iconWrapper">
-		<div class="icon autocomplete"></div>
-		<div class="icon layerpanel"></div>
-		<div class="icon preview"></div>
-	</div>
-
-	<p>
-		Thanks for trying Moonbase. See the <a href="example.html">example page</a> for examples of template variables, includes, markdown, etc. Enjoy!
-	</p>
-
-</section>
-
-{% endblock %}
+<script>
+	document.getElementById("video").play()
+</script> {% endblock %}

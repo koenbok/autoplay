@@ -3252,9 +3252,9 @@ moment@^2.8.4:
   version "2.18.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
 
-moonbase@^1.6.*:
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/moonbase/-/moonbase-1.7.3.tgz#8a6f1d125b7393c02f01e8c48989b462e80715f8"
+moonbase@^1.7.*:
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/moonbase/-/moonbase-1.7.4.tgz#ea2bf9c4914bdbd1978b58c08d6f5e22a1260c1d"
   dependencies:
     autoprefixer "^6.3.7"
     coffee-loader "^0.7.2"
