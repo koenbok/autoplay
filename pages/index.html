@@ -1,7 +1,9 @@
 {% extends "base.html" %} {% block content %}
 
-<video muted playsinline id="video" style="width: 200px" src="/assets/static/gradients.mp4" type="video/mp4" />
+<video muted playsinline id="video1" style="width: 200px" src="/assets/static/gradients.mp4" type="video/mp4" />
+<video muted playsinline id="video2" style="width: 200px" src="/assets/static/shapes.mp4" type="video/mp4" />
 
 <script>
-	document.getElementById("video").play()
+	document.getElementById("video1").play()
+	document.getElementById("video2").play()
 </script> {% endblock %}
